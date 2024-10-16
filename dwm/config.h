@@ -20,11 +20,11 @@ static const char *colors[][3]      = {
 };
 
 static const char *const autostart[] = {
-	"setxkbmap", "fr", NULL,
-	"feh", "--bg-scale", "/home/cokicat/Images/mountain.jpg", NULL,
+	//"setxkbmap", "fr", NULL,
+	"feh", "--bg-scale", "~/background.jpg", NULL,
 	"pipewire", NULL,
 	"pipewire-pulse", NULL,
-	"/home/cokicat/dwm_status.sh", NULL,
+	"~/dwm_status.sh", NULL,
 	NULL /* terminate */
 };
 
