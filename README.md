@@ -1,20 +1,19 @@
 <h1 align="center">cokicat's dotfiles — suckless</h1>
 <p align="center"><b>Colorscheme: <a href="https://github.com/myagko/nymph.git">nymph</a> by <a href="https://github.com/myagko/">myagko</a></b><p>
-<p align="center"><b><a href="">Wallpaper</a></b><p>
+<p align="center"><b><a href="https://w.wallhaven.cc/full/x1/wallhaven-x1vk3z.jpg">Wallpaper</a></b><p>
 <br>
 
 Here are my dotfiles for st and dwm (very lightweight).  
 My other dotfiles (like bash and vim dotfiles) are located at [cokicat/dotfiles](https://github.com/cokicat/dotfiles.git).
 
-- **GTK Theme**: [Colloid-Dark-Everforest]()
-- **Icon Theme**: [Papirus-Dark]()
-- **Font**: [Fira Code Nerd Font]()
-- **Cursor Theme**: [Bibata-Modern-Classic]()
+- **GTK Theme**: [Colloid-Dark-Everforest](https://github.com/vinceliuice/Colloid-gtk-theme)
+- **Icon Theme**: [Papirus-Dark](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) (paleorange)
+- **Font**: [Fira Code Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/FiraMono.zip)
+- **Cursor Theme**: [Bibata-Modern-Classic](https://github.com/ful1e5/Bibata_Cursor)
 - **Launcher**: dmenu
 
 ## Install
 - [ ] todo
-<br>
 
 ## dwm
 dwm version: 6.8
@@ -47,7 +46,11 @@ Gaps and borders are showed when only one client with uselessgaps:
 		}
 	}
 ```
-
+Cursor when resizing a window is fixed (default is unsupported by Bibata-Modern-Classic):
+```c
+// line 1675 in dwm.c
+	cursor[CurResize] = drw_cur_create(drw, XC_bottom_right_corner);
+```
 
 ### Patches used
 Patches are in `dwm/patches`.
