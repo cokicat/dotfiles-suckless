@@ -15,9 +15,6 @@ My other dotfiles (like bash and vim dotfiles) are located at [cokicat/dotfiles]
 - **Cursor Theme**: [Bibata-Modern-Classic](https://github.com/ful1e5/Bibata_Cursor)
 - **Launcher**: dmenu
 
-## Install
-- [ ] todo
-
 ## dwm
 dwm version: 6.8
 ### License
@@ -76,3 +73,7 @@ See `st/LICENSE` for more informations.
 ### Patches used
 Patches are in `dwm/patches`.
 - blinking_cursor
+
+## TODO
+- [ ] install script
+- [ ] st scrollback patch
